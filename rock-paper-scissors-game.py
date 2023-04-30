@@ -17,7 +17,7 @@ machine_answer = random.choice(possible_answer)
 machine_answer_index = possible_answer.index(machine_answer)
 
 def cal(user, machine):
-    return (user % 3 - machine % 3 + 3) % 3
+    return (user - machine + 3) % 3
 
 result = cal(user_answer_index, machine_answer_index)
 
